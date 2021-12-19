@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Search</title>
+</head>
+<body>
+	<h1>Ticket Search</h1>
+    <form id="form" class="form">
+			<div class="form-control">
+        <label for="searchType">Search</label>
+        <select name="searchType" id="searchType">
+            <option value="users">Users</option>
+            <option value="tickets">Tickets</option>
+        </select>
+			</div>
+			<div class="form-control">
+        <label for="searchTerm">Search Term:</label>
+        <input type="text" id="searchTerm" name="searchTerm">
+			</div>
+			<div class="form-control">
+        <label for="searchValue">Search Value:</label>
+        <input type="text" id="searchValue" name="searchValue">
+			</div>
+			<button type="submit">Submit</button>
+    </form>
+    <div class="search_result"></div>
+	<script src="script.js"></script>
+</body>
+</html>
